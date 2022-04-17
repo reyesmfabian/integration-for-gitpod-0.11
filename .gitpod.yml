@@ -1,7 +1,7 @@
 tasks:
   - init: docker-compose pull --include-deps appwrite telegraf influxdb traefik
     command: |
-      docker-compose up
+      docker-compose up -d
 
 ports:
   - port: 8080
